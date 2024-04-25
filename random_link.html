@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Random Link Redirect</title>
+<script type="text/javascript">
+function randomRedirect() {
+    var links = [
+        "https://www.surveycake.com/s/dAo92",
+        "https://www.surveycake.com/s/x9ax8",
+        "https://www.surveycake.com/s/dAQlK",
+        "https://www.surveycake.com/s/Pe2Lw",
+        "https://www.surveycake.com/s/rKaxB",
+        "https://www.surveycake.com/s/Ldza2"
+    ];
+    var randomIndex = Math.floor(Math.random() * links.length);
+    window.location.href = links[randomIndex];
+}
+</script>
+</head>
+<body>
+    <a href="#" onclick="randomRedirect(); return false;">Click me to go to a random link!</a>
+</body>
+</html>
